@@ -1,6 +1,6 @@
 body {
     /* Location of the image */
-    background-image: url("/img/background.svg");
+    background-image: url("//live.staticflickr.com/65535/49954177052_868d45d838_h.jpg");
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
     /* Background image doesn't tile */
