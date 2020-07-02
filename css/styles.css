@@ -1,0 +1,72 @@
+body {
+    /* Location of the image */
+    background-image: url("/img/background.svg");
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+    /* Set a background color that will be displayed
+     while the background image is loading */
+    background-color: #464646;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+p {
+    text-align: justify;
+    font-size: larger;
+    color: aliceblue;
+}
+
+img {
+    zoom: 40%;
+}
+
+#pic {
+    padding: 50px;
+    text-align: center;
+}
+
+#index-box {
+    margin-top: 5%;
+}
+
+#contato-box {
+    margin-top: 20%;
+    text-align: center;
+}
+
+#foto01 {
+    zoom: 27%;
+}
+
+#foto02 {
+    zoom: 30%;
+}
+
+#foto03 {
+    zoom: 30%;
+}
+
+#foto04 {
+    zoom: 11%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #index-box,
+    #contato-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    img {
+        zoom: 20%;
+    }
+}
