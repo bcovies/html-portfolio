@@ -3,18 +3,21 @@ Definição de todos as variáveis globais.
 */
 
 :root {
-    --text-background: rgb(0, 0, 0);
-    --html-background: rgb(255, 255, 0);
-    --div-background: rgb(255, 0, 0);
+    --html-background: #191A21;
+    --text-background: #282A36;
+    /*--div-background: #f25169;*/
     --fullwidth: 100%;
-    --global-font-size: 20px;
-    --global-font-color: white;
-    --global-padding: 10px;
-    --global-margin: 10px;
+    --global-font-size-rem: 15px;
+    --global-font-color: #4ED474;
+    --global-padding: 1rem;
+    --global-padding-left: 3rem;
+    --global-padding-top: 2rem;
+    --global-margin: 0.5rem;
+    --global-border-radious: 1rem;
 }
 
 html {
-    font-size: var(--global-font-size);
+    font-size: var(--global-font-size-rem);
     color: var(--global-font-color);
 }
 
@@ -22,7 +25,21 @@ body {
     background-color: var(--html-background);
 }
 
-/* Div mãe */
+/* Título das div */
+
+.titleDiv {
+    background-color: var( --text-background);
+    /* box qualities */
+    padding-left: var(--global-padding-left);
+    padding-top: var(--global-padding-top);
+    margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
+
+}
+
+/* Div */
+
+/* Mother */
 
 .headerDiv {
     flex: 1;
@@ -32,16 +49,22 @@ body {
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
+
+/* Child*/
 
 .welcomeDiv {
     background-color: var( --text-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
 
-/* Div mãe */
+/* Div */
+
+/* Mother */
 
 .masterDiv {
     display: flex;
@@ -50,31 +73,44 @@ body {
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
+
 }
 
+/* Child */
+
 .middleDiv {
-    flex: 3;
+    flex: 4;
     background-color: var(--div-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
+
+/* Child */
 
 .leftDiv {
     flex: 1;
-    background-color: var(--div-background);
-    /* box qualities */
+    /*background-color: var(--div-background);
+   /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
 
+/* Child */
+
 .rightDiv {
-    flex: 1;
+    flex: 2;
     background-color: var(--div-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
+
+/* Child */
 
 .linksDiv {
     flex: 1;
@@ -84,6 +120,7 @@ body {
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
 
 /* Div mãe */
@@ -96,6 +133,7 @@ body {
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
 
 .blockDiv {
@@ -103,4 +141,5 @@ body {
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
+    border-radius: var(--global-border-radious);
 }
