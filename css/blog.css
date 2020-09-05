@@ -1,25 +1,52 @@
+/*
+Definição de todos as variáveis globais.
+*/
+
 :root {
-    --direita: rgb(255, 0, 0);
-    --blue: #00b;
+    --text-background: rgb(0, 0, 0);
+    --html-background: rgb(255, 255, 0);
+    --div-background: rgb(255, 0, 0);
     --fullwidth: 100%;
-    --global-font: 16px;
+    --global-font-size: 20px;
+    --global-font-color: white;
     --global-padding: 10px;
     --global-margin: 10px;
 }
 
 html {
-    font-size: var(--global-font);
+    font-size: var(--global-font-size);
+    color: var(--global-font-color);
 }
 
 body {
-    background-color: black;
+    background-color: var(--html-background);
 }
+
+/* Div mãe */
+
+.headerDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var( --div-background);
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+
+.welcomeDiv {
+    background-color: var( --text-background);
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+
+/* Div mãe */
 
 .masterDiv {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
@@ -27,7 +54,7 @@ body {
 
 .middleDiv {
     flex: 3;
-    background-color: rgb(0, 0, 255);
+    background-color: var(--div-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
@@ -35,7 +62,7 @@ body {
 
 .leftDiv {
     flex: 1;
-    background-color: rgb(0, 255, 0);
+    background-color: var(--div-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
@@ -43,7 +70,7 @@ body {
 
 .rightDiv {
     flex: 1;
-    background-color: var(--direita);
+    background-color: var(--div-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
@@ -53,28 +80,26 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 10rem;
-    background-color: yellow;
+    background-color: var( --text-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
 }
-.headerDiv {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 10rem;
-    background-color: yellow;
-    /* box qualities */
-    padding: var(--global-padding);
-    margin: var(--global-margin);
-}
+
+/* Div mãe */
+
 .footerDiv {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    padding: 10rem;
-    background-color: yellow;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var( --div-background);
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+
+.blockDiv {
+    background-color: var( --text-background);
     /* box qualities */
     padding: var(--global-padding);
     margin: var(--global-margin);
