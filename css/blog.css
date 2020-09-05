@@ -1,0 +1,81 @@
+:root {
+    --direita: rgb(255, 0, 0);
+    --blue: #00b;
+    --fullwidth: 100%;
+    --global-font: 16px;
+    --global-padding: 10px;
+    --global-margin: 10px;
+}
+
+html {
+    font-size: var(--global-font);
+}
+
+body {
+    background-color: black;
+}
+
+.masterDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+
+.middleDiv {
+    flex: 3;
+    background-color: rgb(0, 0, 255);
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+
+.leftDiv {
+    flex: 1;
+    background-color: rgb(0, 255, 0);
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+
+.rightDiv {
+    flex: 1;
+    background-color: var(--direita);
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+
+.linksDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    background-color: yellow;
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+.headerDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    background-color: yellow;
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
+.footerDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    background-color: yellow;
+    /* box qualities */
+    padding: var(--global-padding);
+    margin: var(--global-margin);
+}
