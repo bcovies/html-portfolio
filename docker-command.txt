@@ -1,0 +1,1 @@
+docker run -d -v /home/dev/Code/Html/portfolio:/usr/share/nginx/html/ -p 1000:80 nginx
